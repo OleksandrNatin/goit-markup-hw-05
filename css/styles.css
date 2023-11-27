@@ -641,6 +641,11 @@ align-items: center;
     fill: #f4f4fd;
 }
 
+.subscribe-form {
+    display: flex;
+    gap: 24px;
+}
+
 .subscribe-wrap {
     margin-left: 80px;
 }
@@ -648,6 +653,9 @@ align-items: center;
 .subscribe-btn {
     margin-left: 24px;
 }
+
+::placeholder {
+color: #ffffff;}
 
 .subscribe-text {
     color:  #FFF;    
@@ -659,27 +667,39 @@ align-items: center;
         line-height: 1.5;
         /* 150% */
         letter-spacing: 0.02em;
+        margin-bottom: 16px;
 }
 
 .subscribe-input {
     width: 264px;
     height: 40px;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
     padding-left: 16px;
     border-radius: 4px;
     border: 1px solid #FFF;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     background: transparent;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    color: #ffffff;
+}
+
+.subscribe-icon {
+    margin-left: 16px;
 }
 
 .subscribe-btn{
-    display: inline-flex;
+    display: flex;
+    min-width: 165px;
     padding: 8px 24px;
     justify-content: center;
     align-items: center;
     gap: 16px;
     color:  #FFF;
+    height: 40px;
     text-align: center;
-    font-family: Roboto;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -688,6 +708,7 @@ align-items: center;
     letter-spacing: 0.04em;
     border-radius: 4px;
     background-color: #4D5AE5;
+    border: none;
 }
 
 
@@ -804,7 +825,7 @@ outline-offset: 4px;
 }
 
 .review-form-field-wrapper {
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 
 .review-form-input-wrapper {
@@ -831,13 +852,16 @@ outline-offset: 4px;
     border: 1px solid rgba(46, 47, 66, 0.40);
     resize: none;
     padding: 8px 16px;
-    color: var rgba(46, 47, 66, 0.40);
+    color: rgba(46, 47, 66, 0.4);
     font-size: 12px;
     font-weight: 400;
-    line-height: 1.16;
+    line-height: 1.17;
     /* 116.667% */
     letter-spacing: 0.04em;
-    transition: border-color 250ms linear;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: transparent;
+    outline: transparent;
+    
 }
 
 .review-form-massage::placeholder {
@@ -865,6 +889,8 @@ outline-offset: 4px;
     cursor: pointer;
     fill: transparent;
     margin-right: 8px;
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -896,11 +922,15 @@ outline: 2px solid rgba(0,0,255,0.5);
 }
 
 .review-form-btn {
-    display: inline-flex;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    font-family: "Roboto", sans-serif;
+
     padding: 16px 32px;
     align-items: flex-start;
     gap: 10px;
-    color: var(--WHITE, #FFF);
+    color: #FFF;
     text-align: center;
     font-size: 16px;
     font-style: normal;
@@ -908,8 +938,9 @@ outline: 2px solid rgba(0,0,255,0.5);
     line-height: 1.5;
     /* 150% */
     letter-spacing: 0.04em;
+    border: none;
     border-radius: 4px;
-    background: var(--IRIS, #4D5AE5);
+    background: #4D5AE5;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     margin-left: 119px;
 }
