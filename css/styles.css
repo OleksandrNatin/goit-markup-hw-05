@@ -827,7 +827,7 @@ outline-offset: 4px;
 .review-form-field-wrapper {
     margin-bottom: 8px;
 }
-.review-form-field-wrapper:last-child {
+.comment {
     margin-bottom: 16px;
 }
 
